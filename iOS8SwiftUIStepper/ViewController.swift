@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 
 
   @IBAction func stepperValueChanged(sender: UIStepper) {
-    valueLabel.text = sender.value.description
+    valueLabel.text = Int(sender.value).description
   }
 }
 
