@@ -18,6 +18,9 @@
                         <subviews>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="2nJ-N1-Sp5">
                                 <rect key="frame" x="253" y="109" width="94" height="29"/>
+                                <connections>
+                                    <action selector="stepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="bIF-Tk-kLD"/>
+                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pig-Yh-MDT">
                                 <rect key="frame" x="16" y="45" width="568" height="30"/>
@@ -35,6 +38,10 @@
                             <constraint firstItem="pig-Yh-MDT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="isG-Ic-vip"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stepper" destination="2nJ-N1-Sp5" id="mbf-u8-0zr"/>
+                        <outlet property="valueLabel" destination="pig-Yh-MDT" id="UFH-61-C5v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
